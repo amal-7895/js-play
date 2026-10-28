@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة جافاسكريبت التفاعلية</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- القائمة الجانبية: محطات التعلم من هرمش[cite: 3] -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <h2>🚀 أكاديمية JS</h2>
+                <p>تطبيقات تفاعلية بدون أكواد</p>
+            </div>
+            
+            <ul class="stations-list">
+                <li class="station-item active" data-target="overview">🌐 JS - نظرة عامة وكتابة أول كود</li>
+                <li class="station-item" data-target="variables">📦 JS - المتغيرات وأنواع البيانات</li>
+                <li class="station-item" data-target="operators">⚡ JS - العوامل الحسابية</li>
+                <li class="station-item" data-target="conditions">🔐 JS - الشروط (قفل الأمان)</li>
+                <li class="station-item" data-target="loops">🔄 JS - الحلقات التكرارية</li>
+                <li class="station-item" data-target="numbers-strings">🔢 JS - الأعداد والنصوص</li>
+                <li class="station-item" data-target="arrays">🛒 JS - المصفوفات (سلة التسوق)</li>
+                <li class="station-item" data-target="functions">🧮 JS - الدوال العادية والسهمية</li>
+            </ul>
+        </aside>
+
+        <!-- منطقة العمل المركزية (تتغير ديناميكياً حسب المحطة المختار) -->
+        <main class="workspace">
+            <header class="workspace-header">
+                <h1 id="stationTitle">نظرة عامة وكتابة أول كود</h1>
+                <p id="stationDesc">مرحباً بك في منصة المحاكاة الحية. اختر أي محطة من القائمة الجانبية لاستكشاف التطبيق العملي.</p>
+            </header>
+
+            <div class="interactive-card" id="interactiveContent">
+                <!-- المحتوى التفاعلي الافتراضي (نظرة عامة) -->
+                <div class="welcome-box">
+                    <h3>أهلاً بك أيها المبرمج العبقري! ✨</h3>
+                    <p>هذه الواجهة مصممة لتطبيق مفاهيم جافاسكريبت برمجياً عبر أدوات تفاعلية حية تظهر للمستخدم مباشرة بدون الحاجة لعرض الكود البرمجي.</p>
+                    <button class="primary-btn" id="startJourneyBtn">ابدأ استكشاف المحطات 🚀</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
